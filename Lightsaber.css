@@ -1,0 +1,114 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1 {
+  color: lightgoldenrodyellow;
+}
+
+a:link, :visited, :hover, :active { 
+  text-decoration: none; color: lightgoldenrodyellow;
+}
+
+.display-area {
+  width: 100%; 
+  min-width: 230px; 
+  float: center;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: transparent;
+  text-align: center;
+}
+.display-area img {
+  max-width: 360px;
+  width: 100%;
+  margin: auto;
+  display: inline-block;
+} 
+.img-container {
+  display: inline-block;
+  position: relative;
+}
+.positioning {
+  position: absolute;
+  right: 208px; 
+  bottom: 128px; 
+}
+
+#saberlength {
+  width: 230px;
+}
+
+#saberstyle {
+  height: 10px; 
+  background: lightgoldenrodyellow;
+  color: transparent; 
+  border-radius: 32px; 
+  display: inline-block;
+  position: absolute; 
+  transform-origin: bottom left; 
+  transform: rotate(-85deg); 
+
+  animation: pulsate 1.5s infinite alternate;
+  border: 0px solid red;
+  box-shadow:  0 0 .2rem #fff,
+  0 0 .2rem #fff,
+  0 0 2rem red,
+  0 0 0.8rem red,
+  0 0 2.8rem red,
+  inset 0 0 1.3rem #fff;
+}
+
+@keyframes pulsate {
+  100% {
+      box-shadow:
+      0 0 4px lightgoldenrodyellow,
+      0 0 11px lightgoldenrodyellow,
+      0 0 19px lightgoldenrodyellow,
+      0 0 40px red,
+      0 0 80px red,
+      0 0 90px red,
+      0 0 100px red,
+      0 0 150px red;
+  }
+  0% {
+    box-shadow:
+    0 0 2px lightgoldenrodyellow,
+    0 0 4px lightgoldenrodyellow,
+    0 0 6px lightgoldenrodyellow,
+    0 0 10px red,
+    0 0 45px red,
+    0 0 55px red,
+    0 0 70px red,
+    0 0 80px red;
+  }
+}
+
+#button {
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: red;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  #button:hover {background-color: red}
+  
+  #button:active {
+    background-color: red;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
